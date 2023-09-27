@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Google Glass</title>
+
+    <style>
+        ul#album {
+            width : 700px;
+            margin : auto auto 10px auto;
+            background-color: #ecf2f9;
+            padding: 10px 50px 50px 50px;
+            overflow: hidden;
+            list-style: none;
+        }
+
+        ul#album li:hover {
+            -webkit-transform: scale(1.5);
+            background-position: 0px 0px !important;
+            background-size: 200px 200px !important;
+        }
+
+        ul#album li span{
+            opacity: 0;
+            color: white;
+            text-shadow: 2px 2px 2px 2px black;
+            background-color: rgba(0,0,0,.3);
+            padding: 5px;
+            font-size: 9pt;
+            line-height: 375px;
+        }
+
+        ul#album li:hover span {
+            opacity: 1;
+        }
+
+        ul#album li{
+            float : left;
+            width : 200px;
+            height : 200px;
+            margin : 10px;
+            border : 3px solid white;
+            background-color: white;
+            box-shadow: 1px 1px 3px rgba(0,0,0.4);
+            background-position: 50%,50% !important;
+            background-size: 400px 400px !important;
+            -webkit-transition: all 0.3s ease-in;
+        }
+
+        ul#album li#f1 {
+            background: url("_imagens/galeria-01.jpg");
+        }
+
+        ul#album li#f2 {
+            background: url("_imagens/galeria-02.jpg") no-repeat;
+        }
+
+        ul#album li#f3 {
+            background: url("_imagens/galeria-03.jpg")no-repeat;
+        }
+
+        ul#album li#f4 {
+            background: url("_imagens/galeria-04.jpg")no-repeat;
+        }
+
+        ul#album li#f5 {
+            background: url("_imagens/galeria-05.jpg")no-repeat;
+        }
+
+        ul#album li#f6 {
+            background: url("_imagens/galeria-06.jpg")no-repeat;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+
+</head>
+
+<script language="JavaScript" src="_javascript/funcoes.js">
+</script>
+
+<body>
+    <header id="Interface">
+
+        <header id="cabecalho">
+            <h2>A revolução do Google está chegando</h2>
+        </header>
+
+        <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+
+        <nav id="menu">
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="fale-conosco.html"> Fale conosco</a></li>
+            </ul>
+        </nav>
+
+        <section id="corpo">
+            <article id="artigo">
+                <header id="cabecalho2">
+                    <h2>Fotos</h2>
+                </header>
+            </article>
+            
+            <ul id="album">
+                <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do <b>Google Glass</b>, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+                <li id="f1"><span>Agenda e lembretes</span></li>
+                <li id="f2"><span>Sergey Brin usando o Glass</span></li>
+                <li id="f3"><span>Leve e compacto</span></li>
+                <li id="f4"><span>Sensação de uma tela de 50"</span></li>
+                <li id="f5"><span>Vários tipos de lente</span></li>
+                <li id="f6"><span>Informações importantes</span></li>
+            </ul>
+
+        </section>
+
+        <footer id="rodape">
+            <h3>&copy; 2019 - Fernando Pires</h3>
+            <h4><a target="_blank" href="http://www.facebook.com/fernando.pirees"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> | <a target="_blank" href="https://www.instagram.com/feernandopires/?hl=pt-br"> <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+        </footer>
+
+    </header>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+body {
+    background-color:#ecf2f9
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #dddddd;
+}
+
+header#Interface{
+    width: 1250px;
+    background-color: #ffffff;
+    margin: 25px auto 25px auto;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 100%;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 700px;
+}
+
+nav#menu li{
+    display:inline-block;
+    background-color: #6395cf;
+    padding: 8px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {background-color: #606060}
+
+nav#menu h1{
+    display:none
+}
+nav#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+img#icone {
+    position: absolute;
+    left: 1120px;
+    top: 60px;
+    max-width: 150px;
+}
+
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover{
+    background-color: rgb(64, 139, 67);
+    transition: background-color 1s;
+}
+
+header#cabecalho {
+    border-bottom: 1px #dddddd solid;
+    height: 150px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 100px;
+}
+
+header#cabecalho h2 {
+    font-size: 18px;
+    color: black;
+    padding:0px;
+    margin-top: -3pt;
+}
+
+article#artigo h2{
+    font-size: 12pt;
+    background-color: white;
+    padding: 5px 0 5px 0;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho2 h2{
+    font-size: 15pt;
+    background-color: #ecf2f9;
+    padding-left: 10px;
+}
+

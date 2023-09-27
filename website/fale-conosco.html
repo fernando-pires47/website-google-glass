@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+
+    <script>
+        function calc_total() {
+            var qnt = (document.getElementById('iqnt').value);
+            tot = qnt *1500 ;
+            (document.getElementById('iprc').value) = tot;
+        }
+    </script>
+
+    <title>Google Glass</title>
+
+    <style>
+
+        form {
+            width: 500px;
+            margin:auto;
+        }
+
+        input, textarea{
+            font-family: sans-serif;
+            font-size: 10pt;
+            background-color: rgba(255,255,255,.8);
+        }
+
+        input:hover, textarea:hover {
+            background-color: #ecf2f9;
+        }
+
+        input#idata {
+            margin-left:15px;
+        }
+
+        legend{
+            font-weight:bold;
+            font-size:13pt;
+            font-family: sans-serif;
+        }
+
+        fieldset{
+            border-color: #ecf2f9;
+            margin:20px;
+        }
+
+        fieldset#sexo{
+            width: 200px;
+        }
+
+        fieldset#datanasc{
+            width: 200px;
+        }
+
+        fieldset#usuario{
+            background: url("_imagens/icone-contato.png")no-repeat 95% 95%;
+        }
+
+        fieldset#mensagem {background: url("_imagens/icone-mensagem.png")no-repeat 95% 95%;}
+        fieldset#endereco {background: url("_imagens/icone-endereco.png")no-repeat 95% 95%;}
+        fieldset#glass    {background: url("_imagens/icone-pagamento.png")no-repeat 95% 95%;}
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+
+</head>
+
+<script language="JavaScript" src="_javascript/funcoes.js">
+</script>
+
+<body>
+<header id="Interface">
+    <header id="cabecalho">
+        <h2>A revolução do Google está chegando</h2>
+    </header>
+
+    <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+
+    <nav id="menu">
+        <ul>
+            <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"> <a href="fale-conosco.html"> Fale conosco</a></li>
+        </ul>
+    </nav>
+
+    <section id="corpo">
+        <article id="artigo">
+            <header id="cabecalho2">
+                <h2>Contato</h2>
+            </header>
+        </article>
+    </section>
+
+   <form method="post" id="fcontato" action="mailto:fernandopires_longo@hotmail.com" oninput="calc_total ();">
+
+        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p><label for="iname">Nome </label><input type="text" name="nname" id="iname" size="20" maxlength="30" placeholder="Nome Completo"></p>
+            <p><label for="isenha"> Senha </label><input type="password" name="nsenha" id="isenha"size="20" maxlength="8" placeholder="Senha"></p>
+            <p><label for="imail"> E-mail </label><input type="email" name="nmail" id="imail" size="20" maxlength="35" placeholder="E-mail"></p>
+
+            <fieldset id="sexo"><legend>Sexo </legend>
+                <input type="radio" name="nsexo" id="imasc"> <label for="imasc">Masculino</label>
+                <input type="radio" name="nsexo" id="ifem"><label for="ifem">Feminino</label>
+            </fieldset>
+
+            <fieldset id="datanasc"><legend> Data de Nascimento </legend><input type="date" name="ndata" id="idata" >
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p> <label for="irua">Endereço </label><input type="text" name="nrua" id="irua" size="13" maxlength="80" placeholder="Rua,Bairro"></p>
+            <p><label for="inum">Número </label><input type="number" name="nnum" id="inum" min="0" max="99999" placeholder="Número"></p>
+            <p><label for="iest">Estado </label>
+                <select name="nest" id="iest" placeholder="Estado"  size="1" maxlength="2">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option selected>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </p>
+            <p><label for="icit">Cidade </label><input type="text" name="ncit" id="icit" size="13" maxlength="25" placeholder="Cidade"></p>
+        </fieldset>
+
+        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="iurg"> Grau de Urgência: </label>Mín<input type="range" min="0" max="10" step="2" name="nurg" id="iurg">Max</p>
+            <p>Mensagem <textarea name="nmsg" id="imsg" cols="35" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
+        </fieldset>
+
+        <fieldset id="glass"><legend>Quero um Google Glass</legend>
+            <p><input type="checkbox" name="nadq" id="iadq"> <label for="iadq"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="icor"> Cor </label><input type="color" name="ncor" id="icor"></p>
+            <p><label for="iqnt">Quantidade </label><input type="number" name="nqnt" id="iqnt" min="0" max="6" value="0"></p>
+            <p><label for="iprc">Preço Total </label><input type="text" name="nprc" id="iprc" placeholder="Valor do produto" readonly></p>
+        </fieldset>
+
+
+        <button name="nenviar">Enviar</button>
+
+   </form>
+   
+   <footer id="rodape">
+        <h3>&copy; 2019 - Fernando Pires</h3>
+        <h4><a target="_blank" href="http://www.facebook.com/fernando.pirees"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> | <a target="_blank" href="https://www.instagram.com/feernandopires/?hl=pt-br"> <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+    </footer>
+
+</body>
+</html>

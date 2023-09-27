@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Google Glass</title>
+
+    <style>
+     
+        div#tv-radio {
+            width: 900px;
+            height: 580px;
+            margin: auto;
+            background: url("_imagens/radio-tv.png")no-repeat;
+        }
+
+        audio#som{
+            display: block;
+            position: relative;
+            left: 575px;
+            top: 490px;
+            width: 300px;
+        }
+
+        video#filme {
+            display: block;
+            position: relative;
+            left: 85px;
+            top: 65px;
+            width: 440px;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+
+</head>
+
+<script language="JavaScript" src="_javascript/funcoes.js">
+</script>
+
+<body>
+    <header id="Interface">
+        <header id="cabecalho">
+            <h2>A revolução do Google está chegando</h2>
+        </header>
+
+            <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+
+        <nav id="menu">
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"> <a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"> <a href="fale-conosco.html"> Fale conosco</a></li>
+            </ul>
+        </nav>
+
+        <section id="corpo">
+            <article id="artigo">
+                <header id="cabecalho2">
+                    <h2>Multimídia</h2>
+                </header>
+                <div id="tv-radio">
+                    <audio id="som" controls="controls">
+                        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                    </audio>
+                    <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+                        <source src="_media/getting-started.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <h3>&copy; 2019 - Fernando Pires</h3>
+            <h4><a target="_blank" href="http://www.facebook.com/fernando.pirees"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> | <a target="_blank" href="https://www.instagram.com/feernandopires/?hl=pt-br"> <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+        </footer>
+    </header>
+</body>
+</html>
